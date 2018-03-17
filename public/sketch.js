@@ -7,7 +7,7 @@ function setup() {
   textAlign(CENTER);
   textSize(18);
   player = new Player();
-  socket = io.connect('http://82.235.199.149:30000')
+  socket = io.connect('http://yourIp:30000')
   socket.on('playerNumber', playerNumber);
   socket.on('pos1', pos1);
   socket.on('pos2', pos2);
